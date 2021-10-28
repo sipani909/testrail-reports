@@ -1,0 +1,9 @@
+{
+	"author": "Gurock Software",
+	"version": 1,
+	"label": "l:reports_ms_meta_label",
+	"summary": "l:reports_ms_meta_summary",
+	"description": "l:reports_ms_meta_description",
+	"group": "l:reports_ms_meta_group",
+	"translations": ["reports_ms"]
+}
