@@ -128,6 +128,23 @@ $report_obj->render_view('index/attributes', $temp);
 	<?php endif ?>
 <?php endif ?>
 
+<?php if ($defects && $defects->content): ?>
+    <?php
+    $temp = array();
+    $temp['project'] = $project;
+    $temp['defects'] = $defects;
+    $temp['test_columns'] = $test_columns;
+    $temp['test_columns_for_user'] = $test_columns_for_user;
+    $temp['test_fields'] = $test_fields;
+    $temp['case_fields'] = $case_fields;
+    $temp['limit'] = $test_limit;
+    $temp['show_links'] = $show_links;
+    $report_obj->render_view('index/defects', $temp);
+    ?>
+<?php else: ?>
+    <p><?php echo  lang('reports_ms_defects_empty') ?></p>
+<?php endif ?>
+
 <?php $has_tests = false ?>
 <?php if ($tests_include && $runs_noplan): ?>
 	<?php $test_limit_current = $test_limit ?>

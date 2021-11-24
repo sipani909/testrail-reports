@@ -18,6 +18,7 @@ $lang['reports_ms_form_details_include_progress'] = 'Progress and remaining esti
 $lang['reports_ms_form_details_include_tests'] = 'Tests and test results';
 
 $lang['reports_ms_na'] = 'The milestone for this report no longer exists and may have been deleted.';
+$lang['reports_ms_defects_empty'] = 'No defects found.';
 
 $lang['reports_ms_title'] = 'Milestone: {0}';
 
