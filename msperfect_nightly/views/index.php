@@ -71,20 +71,6 @@ $report_obj->render_view('index/attributes', $temp);
 ?>
 </div>
 
-<h1><img class="right noPrint" src="%RESOURCE%:images/report-assets/help.svg" width="16" height="16" alt="" title="<?php echo  lang('reports_ms_runs_info') ?>" /><?php echo  lang('reports_ms_runs') ?></h1>
-
-<?php if ($runs): ?>
-	<?php
-	$temp = array();
-	$temp['runs'] = $runs;
-	$temp['run_rels'] = array();
-	$temp['show_links'] = $show_links;
-	$GI->load->view('report_plugins/runs/groups', $temp);
-	?>
-<?php else: ?>
-	<p><?php echo  lang('reports_ms_runs_empty') ?></p>
-<?php endif ?>
-
 <?php if ($activities_include): ?>
 	<h1><img class="right noPrint" src="%RESOURCE%:images/report-assets/help.svg" width="16" height="16" alt="" title="<?php echo  lang('reports_ms_activity_info') ?>" /><?php echo  lang('reports_ms_activity') ?></h1>
 	<?php if ($activity): ?>
