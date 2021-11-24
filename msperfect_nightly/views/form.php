@@ -99,6 +99,15 @@
 				)
 			) ?>
 		</div>
+		<div class="tab tab4 <?php echo  $tab != 4 ? 'hidden' : '' ?>">
+                       <?php $report_obj->render_control(
+                               $controls,
+                               'defects_select',
+                               array(
+                               'top' => true
+                               )
+                       ) ?>
+                </div>
 	</div>
 </div>
 
