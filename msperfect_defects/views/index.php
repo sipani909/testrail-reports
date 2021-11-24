@@ -75,7 +75,7 @@ $temp = array();
 $temp['runs'] = $runs;
 $temp['runs_reversed'] = $runs_reversed;
 $temp['show_links'] = $show_links;
-$report_obj->render_view('index/charts', $temp);
+#$report_obj->render_view('index/charts', $temp);
 ?>
 <?php endif ?>
 
