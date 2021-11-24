@@ -79,26 +79,6 @@ $report_obj->render_view('index/charts', $temp);
 ?>
 <?php endif ?>
 
-<h1 class="top"><img class="right noPrint" src="%RESOURCE%:images/report-assets/help.svg" width="16" height="16" alt="" title="<?php echo  lang('reports_ds_runs_header_info') ?>" /><?php echo  lang('reports_ds_runs_header') ?></h1>
-<?php if ($runs): ?>
-	<div class="help" style="margin-bottom: 1em">
-		<img src="%RESOURCE%:images/report-assets/help.svg" width="16" height="16" 
-			alt="" />
-		<p><?php echo  lang('reports_ds_runs_help') ?></p>
-		<div style="clear: both"></div>
-	</div>
-	<?php
-	$temp = array();
-	$temp['runs'] = $runs;
-	$temp['run_rels'] = $run_rels;
-	$temp['run_count'] = $run_count;
-	$temp['show_links'] = $show_links;
-	$report_obj->render_view('index/runs', $temp);
-	?>
-<?php else: ?>
-	<p><?php echo  lang('reports_ds_runs_empty') ?></p>
-<?php endif ?>
-
 <h1><img class="right noPrint" src="%RESOURCE%:images/report-assets/help.svg" width="16" height="16" alt="" title="<?php echo  lang('reports_ds_defects_header_info') ?>" /><?php echo  lang('reports_ds_defects_header') ?></h1>
 
 <?php if ($defects && $defects->content): ?>
