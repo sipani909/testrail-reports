@@ -164,6 +164,7 @@ $report_obj->render_view('index/attributes', $temp);
 			$temp['case_fields'] = $case_fields;
 			$temp['outline'] = $run_outline;
 			$temp['show_links'] = $show_links;
+            $temp['limit'] = $test_limit;
             #$report_obj->render_view('index/defects', $temp);
 			$report_obj->render_view('index/run', $temp);
 			?>
