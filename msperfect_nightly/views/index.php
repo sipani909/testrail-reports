@@ -156,7 +156,7 @@ $report_obj->render_view('index/attributes', $temp);
 			<?php
 			$temp = array();
 			$temp['project'] = $project;
-            $temp['defects'] = $defects;
+            #$temp['defects'] = $defects;
 			$temp['test_ids'] = $test_ids;
 			$temp['test_fields'] = $test_fields;
 			$temp['test_columns'] = $test_columns;
@@ -164,7 +164,7 @@ $report_obj->render_view('index/attributes', $temp);
 			$temp['case_fields'] = $case_fields;
 			$temp['outline'] = $run_outline;
 			$temp['show_links'] = $show_links;
-            $report_obj->render_view('index/defects', $temp);
+            #$report_obj->render_view('index/defects', $temp);
 			$report_obj->render_view('index/run', $temp);
 			?>
 			<?php if ($test_limit): ?>
