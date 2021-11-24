@@ -131,8 +131,8 @@ class Msperfect_nightly_report_plugin extends Report_plugin
 		{
 			$defaults = array(
 				'status_include' => true,
-				'activities_include' => true,
-				'progress_include' => true,
+				'activities_include' => false,
+				'progress_include' => false,
 				'tests_include' => true
 			);
 		}
