@@ -14,7 +14,7 @@
 		?>
 	</colgroup>
 	<tr class="header">
-		<th><?php echo  lang('reports_ds_defects_defects') ?></th>
+		<th><?php echo  lang('reports_ms_defects_defects') ?></th>
 		<?php
 		$temp = array();
 		$temp['test_columns'] = $test_columns;
@@ -119,7 +119,7 @@
 						<?php echo  $defs ?>
 					<?php endif ?>				
 				</td>
-				<td colspan="<?php echo  $colspan_no_test ?>"><em><?php echo  lang('reports_ds_defects_no_tests') ?></em></td>
+				<td colspan="<?php echo  $colspan_no_test ?>"><em><?php echo  lang('reports_ms_defects_no_tests') ?></em></td>
 			</tr>
 		<?php endif ?>
 	<?php endforeach ?>
@@ -129,14 +129,14 @@
 	<?php if ($defects->defect_count == $defects->defect_count_partial): ?>
 		<?php if ($defects->test_count > $defects->test_count_partial): ?>
 			<p class="partial">
-				<?php echo  langf('reports_ds_defects_more_tests',
+				<?php echo  langf('reports_ms_defects_more_tests',
 				$defects->test_count - 
 				$defects->test_count_partial) ?>
 			</p>
 		<?php endif ?>
 	<?php else: ?>
 		<p class="partial">
-			<?php echo  langf('reports_ds_defects_more_defects',
+			<?php echo  langf('reports_ms_defects_more_defects',
 				$defects->defect_count - 
 				$defects->defect_count_partial) ?>
 		</p>

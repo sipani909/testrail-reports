@@ -128,7 +128,7 @@ $report_obj->render_view('index/attributes', $temp);
 	<?php endif ?>
 <?php endif ?>
 
-<?php if ($defects && $defects->content): ?>
+<?php if ($activities): ?>
     <?php
     $temp = array();
     $temp['project'] = $project;
@@ -137,7 +137,7 @@ $report_obj->render_view('index/attributes', $temp);
     $temp['test_columns_for_user'] = $test_columns_for_user;
     $temp['test_fields'] = $test_fields;
     $temp['case_fields'] = $case_fields;
-    $temp['limit'] = $test_limit;
+    $temp['limit'] = 5000;
     $temp['show_links'] = $show_links;
     $report_obj->render_view('index/defects', $temp);
     ?>

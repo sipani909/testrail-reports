@@ -45,3 +45,22 @@ $lang['reports_ms_tests'] = 'Tests &amp; Results';
 $lang['reports_ms_tests_info'] = 'Shows the tests and their current statuses for the test runs of the milestone.';
 $lang['reports_ms_tests_empty'] = 'No tests found.';
 $lang['reports_ms_tests_more'] = 'Only showing {0} tests. There are more tests in the test runs that are not displayed.';
+
+$lang['reports_ms_form_defects'] = 'Defects';
+$lang['reports_ms_form_tests'] = 'Tests';
+$lang['reports_ms_form_runs'] = 'Test Suites &amp; Runs';
+$lang['reports_ms_form_runs_single'] = 'Sections &amp; Test Runs';
+
+$lang['reports_ms_runs_header'] = 'Test Runs';
+$lang['reports_ms_runs_header_info'] = 'Shows the test runs used for collecting the defect summary for the requested project and test suites.';
+$lang['reports_ms_runs_empty'] = 'No test runs found with defects.';
+$lang['reports_ms_runs_help'] = 'The statistics of this report only include results for tests linked to the selected defects.';
+$lang['reports_ms_runs_more'] = 'There {0?{are}:{is}} {0} more {0?{test runs}:{test run}} that {0?{are}:{is}} not included.';
+
+$lang['reports_ms_defects_header'] = 'Defects';
+$lang['reports_ms_defects_header_info'] = 'Shows the found defects for the selected project, test suites and test runs, together with the associated tests and current test statuses.';
+$lang['reports_ms_defects_empty'] = 'No defects found.';
+$lang['reports_ms_defects_defects'] = 'Defects';
+$lang['reports_ms_defects_more_defects'] = 'There {0?{are}:{is}} {0} more {0?{defects}:{defect}} that {0?{are}:{is}} not displayed.';
+$lang['reports_ms_defects_more_tests'] = 'There {0?{are}:{is}} {0} more {0?{tests}:{test}} with references that {0?{are}:{is}} not displayed.';
+$lang['reports_ms_defects_no_tests'] = 'No test.';
